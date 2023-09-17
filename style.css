@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 2rem;
+  justify-items: center;
+  background-color: burlywood;
+  padding: 30px 80px 30px;
+}
+.container {
+  height: auto;
+  width: 80vh;
+}
+.image {
+  width: 100%;
+  height: auto;
+}
+
+footer{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px 50px;
+  
+}
+.footer-content h1{
+  font-size: 50px
+}
+.social{
+  margin-right: 50px;
+}
+.icons a {
+  color: white;
+
+}
+.icons-each{
+  margin: 0 6px 0;
+}
+.line{
+  background-color: white;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.logo{
+  height: 80px;
+  border-radius: 50%;
+}
+.copyright{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+
+.games{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.games h3{
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+.games-lists{
+  padding-top: 10px;
+}
+.games-lists a {
+ margin: 10px;
+}
+@media (max-width: 768px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    padding-bottom: 5rem;
+  }
+  .container {
+    height: auto;
+    width: auto;
+  }
+ .footer-content{
+  display: block;
+  padding: 30px 40px 30px;
+ }
+ .call{
+  margin-bottom: 20px;
+ }
+ .call h1{
+  font-size: 35px;
+ }
+ .call h2{
+  font-size: 15px;
+ }
+ .icons{
+  display:flex ;
+ }
+ .games h3{
+  font-size: 20px;
+  padding: 5px;
+ }
+ .games-lists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.feedback {
+margin-bottom: 25px ;
+}
+}
+
+@media (max-width: 1200px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    padding-bottom: 5rem;
+  }
+  .container {
+    height: auto;
+    width: auto;
+  }
+  .icons{
+    display:flex ;
+   }
+   .call h1{
+    font-size: 45px;
+   }
+   .icons-each{
+    margin: 0 6px 0;
+   }
+}
