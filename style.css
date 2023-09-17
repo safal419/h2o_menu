@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 section {
   display: grid;
@@ -64,6 +65,7 @@ footer{
 .games{
   text-align: center;
   padding-top: 20px;
+  margin-bottom: 30px;
 }
 
 .games h3{
@@ -87,6 +89,12 @@ footer{
     height: auto;
     width: auto;
   }
+  .logo{
+    display: none;
+  }
+  .copyright{
+    align-items: center;
+  }
  .footer-content{
   display: block;
   padding: 30px 40px 30px;
@@ -95,25 +103,29 @@ footer{
   margin-bottom: 20px;
  }
  .call h1{
-  font-size: 35px;
+  font-size: 30px;
+  font-weight: bold;
+  color: darkgoldenrod;
  }
  .call h2{
-  font-size: 15px;
+  font-size: 20px;
  }
  .icons{
   display:flex ;
  }
  .games h3{
   font-size: 20px;
-  padding: 5px;
+  padding: 10px;
  }
  .games-lists {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
-.feedback {
-margin-bottom: 25px ;
-}
+ }
+  .feedback {
+  margin-bottom: 35px ;
+  margin-top: 35px ;
+
+  }
 }
 
 @media (max-width: 1200px) {
@@ -127,6 +139,27 @@ margin-bottom: 25px ;
     height: auto;
     width: auto;
   }
+  .footer-content{
+    display: block;
+    padding: 30px 40px 30px;
+   }
+   .call{
+    margin-bottom: 20px;
+   }
+   .call h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: darkgoldenrod;
+   }
+   .call h2{
+    font-size: 20px;
+   }
+   .feedback {
+    margin-bottom: 35px ;
+    margin-top: 35px ;
+  
+    }
+   
   .icons{
     display:flex ;
    }
@@ -135,5 +168,13 @@ margin-bottom: 25px ;
    }
    .icons-each{
     margin: 0 6px 0;
+   }
+   .games-lists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   }
+   .games h3{
+    font-size: 30px;
+    padding: 15px;
    }
 }
